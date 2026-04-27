@@ -1,0 +1,58 @@
+# =========================
+# OS fajlovi
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Visual Studio / C#
+# =========================
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.pdb
+*.exe
+*.dll
+
+# =========================
+# Build / Release folderi
+# =========================
+Debug/
+Release/
+x64/
+x86/
+
+# =========================
+# Node / Web (ako imaš JS projekte)
+# =========================
+node_modules/
+dist/
+build/
+
+# =========================
+# Paketi i instalacije
+# =========================
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.iso
+*.msi
+*.exe
+
+# =========================
+# Baze / lokalni fajlovi
+# =========================
+*.mdf
+*.ldf
+*.sqlite
+*.db
+
+# =========================
+# Log fajlovi
+# =========================
+*.log

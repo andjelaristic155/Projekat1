@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Gradski prevoz</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+    <script src="./fontawesome/js/all.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+<?php
+  require_once('funkcije.php');
+  session_start();
+  pocetnaProvera();
+    
+?>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.php">Početna</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="karte.html" >Karte</a>
+        </li>
+        
+
+           
+
+
+      </ul>
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="prijava.php" >Prijavi se</a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+    
+<br><br><br>
+
+<section id="hero-section">
+    <div class="container hero-container" >
+      <br><br>
+        <div id="naslov" style="text-align:center; "><h1>Rezervacija autobuskih karata gradskog prevoza</h1></div>
+    
+<br><br>
+    <div>
+        <img src="slike/slika1.jpg" alt="" style="width:100%; height:500px;">
+    </div>
+<br><br>
+    <div style="text-align:center; "><h2>Informacije o kartama</h2></div>
+<br><br>
+    <div id="text" style="font-size: large; margin-bottom: 100px;" ><p>U okviru sistema javnog prevoza korisnicima su dostupne različite vrste karata koje omogućavaju jednostavno i fleksibilno korišćenje prevoza u zavisnosti od potreba putnika. Karte se razlikuju po trajanju važenja i zoni u kojoj se koriste.
+
+Korisnici mogu izabrati između dnevnih i mesečnih karata.
+Dnevne karte omogućavaju neograničeno korišćenje javnog prevoza tokom jednog dana, dok mesečne karte važe tokom celog meseca i namenjene su putnicima koji svakodnevno koriste prevoz.
+<br>
+Pored trajanja, karte su podeljene i prema zonama prevoza:
+<br>
+<li>Zona A – obuhvata uži, centralni deo grada i najprometnije gradske linije.</li>
+
+<li>Zona B – odnosi se na širi, odnosno spoljašnji deo grada i prigradska naselja.</li>
+
+<li>Zona A+B – omogućava korišćenje prevoza u obe zone, odnosno na celokupnoj teritoriji grada.</li><br>
+
+Ovakva podela omogućava korisnicima da izaberu kartu koja najbolje odgovara njihovim potrebama i svakodnevnim rutama kretanja.
+<br><br>
+Pre kupovine ili rezervacije karte preporučuje se da korisnik proveri zonu u kojoj se najčešće kreće, kako bi odabrao odgovarajuću kartu i izbegao eventualne nepravilnosti prilikom korišćenja javnog prevoza.</p></div>
+
+
+</div>
+</section>
+    
+
+    
+    
+</body>
+</html>

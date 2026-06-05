@@ -60,6 +60,7 @@
     <div class="container">
         <br>
         <div id="naslov" style="text-align:center;"><h1>Rezervacija autobuskih karata gradskog prevoza</h1></div>
+        <hr class="hrLinija">
     <br>
 
 <?php
@@ -84,7 +85,7 @@ $dbc->close();
 
 ?>
 <form action="" method="POST" >
-<table border="1" cellpadding="8" style="margin-left:30%; ">
+<table border="1" cellpadding="8" style="margin-left:25%; ">
     <tr>
         
         <th>Zona</th>

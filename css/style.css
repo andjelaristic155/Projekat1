@@ -19,14 +19,20 @@ body{
     padding-left: 20px;
      color: black;
    
-    
 }
 
-.navbar .nav-link{
-    color: #333333 !important;
-    font-size: 20px;
+
+.nav-link:hover{
+    background-color: rgb(142, 212, 253);
+
+}
+
+
+.nav-link{
+    color: black !important;
+    font-size: 25px;
     /* padding-left: 50px; */
-    /* margin-left: 15px; */
+     margin-left: 15px; 
     margin-top:10px;
     margin-bottom: 10px;
     display: inline-block;
@@ -35,9 +41,38 @@ body{
    
     width: max-content;
      padding-right: 15px; 
+     font-weight: 500;
+    margin-right: 30px;
+    box-sizing: border-box;
+  
+    
+}
+.nav-link:hover{
+    background-color:rgb(142, 212, 253);
+    border-radius: 10px;
     
     
-    box-sizing: border-box; 
+    text-align: center;
+   
+   
+}
+
+.navbar .nav-link.active{
+    background-color: rgb(142, 212, 253);;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: max-content;
+    padding-left: 10px;
+    text-align: center;
+    
+}
+
+.navbar .nav-link.active:hover{
+    background-color:rgb(142, 212, 253);;
+    border-radius: 10px;
+    
+    text-align: center;
+    
 }
 
 
@@ -84,4 +119,67 @@ table td{
 table th{
     border: 1px solid black;
     padding: 10px 20px;
+}
+
+.dugme{
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgb(168, 215, 243);
+    border: 3px solid black;
+    font-weight: 500;
+}
+
+.podaci{
+    font-size: 22px;
+    text-align: left;
+    margin-left: 30%;
+   
+}
+
+.podaciInput{
+    margin-left: 20px;
+    height: 30px;
+    border-radius: 10px;
+    border: 3px solid rgb(105, 162, 247);
+}
+
+.hrLinija{
+    margin-top: 30px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.podaci1{
+    margin-left: 20px;
+}
+
+
+#zona{
+    font-size: 20px;
+    border-radius: 10px;
+    border: 3px solid rgb(105, 162, 247);
+    padding-left: 10px;
+    width: 300px;
+}
+
+.dugme2{
+    margin: 20px 20px;
+    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+    border:3px solid rgb(105, 162, 247);
+    font-weight: bold;
+    background-color: white;
+}
+
+.dugme2:hover{
+    background-color: rgb(105, 162, 247);
+    color: white;
+    font-weight: bold;
+     border:3px solid rgb(84, 148, 245);
+}
+
+#naslov{
+    padding-top: 20px;
 }

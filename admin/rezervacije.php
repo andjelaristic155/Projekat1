@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Dobrodosao Admin</h1>
+    
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,7 +32,7 @@
           <a class="nav-link active" aria-current="page" href="pocetnaAdmin.php">Početna</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="rezervacije.php">Karte</a>
+          <a class="nav-link" href="rezervacije.php">Rezervacije</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="uredjivanje.php" >
@@ -74,9 +74,10 @@
     <div>
 
     <div id="naslov"><h1>Rezervacije</h1></div>
+    <hr class="hrLinija">
         <form action="" method="POST" onsubmit="return proveriIzbor();">
             
-<table style="margin-left:10%; margin-top:50px;">
+<table style="margin-left:3%; margin-top:40px;">
     <tr>
         <th>Izaberi</th>
         <th>Id rezervacije</th>
@@ -176,9 +177,9 @@
     <?php
     $dbc= new mysqli(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);
     $dbc->set_charset("utf8");
-    $rez = mysqli_query($dbc, "SELECT idKarte, Zona, Trajanje FROM Karta ORDER BY Zona ASC");
+    $rez = mysqli_query($dbc, "SELECT idKarte, Zona, Trajanje, cena FROM Karta where status='aktivan' ORDER BY Zona ASC");
     while ($row = mysqli_fetch_assoc($rez)) {
-        echo '<option value="'.$row['idKarte'].'">'.$row['Zona'].' - '.$row['Trajanje'].'</option>';
+        echo '<option value="'.$row['idKarte'].'">'.$row['Zona'].' - '.$row['Trajanje'].' - Cena: '.$row['cena'].'</option>';
     }
     mysqli_close($dbc); 
     ?>
@@ -186,8 +187,8 @@
            
            
 <br>
-            <input type="submit" value="Obrisi" name="obrisi" style="margin:0px 20px;">
-            <input type="submit" value="Izmeni" name="izmeni">
+            <input type="submit" value="Obrisi" name="obrisi" class="dugme2">
+            <input type="submit" value="Izmeni" name="izmeni" class="dugme2">
         </form>
         
     </div><br><br>

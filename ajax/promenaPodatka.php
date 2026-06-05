@@ -75,7 +75,7 @@
             <h4>Unesite email adresu: <input type="email" name="email1" id="email1"></h4>
             <div id="email1Error" class="text-danger"></div>
 
-            <input type="button" value="Promenite podatke" onClick="izmeniPodatke()">
+            <button type="button" class="btn btn-outline-primary" onClick="izmeniPodatke()">Promenite podatke</button>
         </div>
    
 

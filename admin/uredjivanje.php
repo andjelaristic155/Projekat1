@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Dobrodosao Admin</h1>
+    
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -70,8 +70,9 @@
 <section id="hero-section">
     <div class="container">
         <div id="naslov"><h1>Uredjivanje</h1></div>
+        <hr class="hrLinija">
         <form action="" method="POST">
-        <table style="margin-left:10%;">
+        <table style="margin-left:3%; margin-top:50px">
              <tr>
                     <th><label for="">Izaberi</label></th>
                     <th><label for="">Id rezervacije</label></th>
@@ -160,18 +161,18 @@
                     <th><label for="">Status</label></th>
             </tr>
             <tr>
-                <th><input type="text" id="trajanje" name="Trajanje" ></th>
-                <th><input type="text" id="zona" name="Zona"></th>
-                <th><input type="number" id="cena" name="Cena"></th>
-                <th><input type="text" id="status" name="Status"></th>
+                <th><input type="text" id="trajanje" name="Trajanje" class="podaciInput"></th>
+                <th><input type="text" id="zona" name="Zona" class="podaciInput" style="width:200px"></th>
+                <th><input type="number" id="cena" name="Cena" class="podaciInput"></th>
+                <th><input type="text" id="status" name="Status" class="podaciInput"></th>
             </tr>
        
             
         </table>
     <br><br>
-            <input type="submit" value="Izmeni" name="izmeni" onclick="return proveriIzbor();" style="margin:0px 20px;">
-            <input type="submit" value="Obrisi" name="obrisi" onclick="return proveriIzbor();" style="margin:0px 20px;">
-            <input type="submit" value="Dodaj" name="dodaj" style="margin:0px 20px;">
+            <input type="submit" value="Izmeni" name="izmeni" onclick="return proveriIzbor();" class="dugme2">
+            <input type="submit" value="Obrisi" name="obrisi" onclick="return proveriIzbor();" class="dugme2" >
+            <input type="submit" value="Dodaj" name="dodaj" class="dugme2">
         </form>
 
     <div>

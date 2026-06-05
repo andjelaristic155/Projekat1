@@ -57,6 +57,7 @@
     <div class="container" style="text-align:center;">
         <br>
         <div id="naslov"><h1>Rezervacija autobuskih karata gradskog prevoza</h1></div>
+        <hr class="hrLinija">
     <br>
         
     
@@ -178,7 +179,7 @@ function proveriIzbor() {
 
 </table>
 <br><br>
-<button type="submit" name="sacuvaj" >Rezervisi</button>
+<button type="submit" name="sacuvaj" class="dugme2">Rezervisi</button>
  <br>
          <label>
         <?php if(isset($greska)) echo $greska; ?>

@@ -156,7 +156,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php">Početna</a>
+          <a class="nav-link " aria-current="page" href="index.php">Početna</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="karte.html" style="color:black;">Karte</a>
@@ -170,7 +170,7 @@
 
       <ul class="navbar-nav">
         <li class="nav-item">
-            <a class="nav-link" href="prijava.html" style="color:black;">Prijavi se</a>
+            <a class="nav-link active" href="prijava.php" style="color:black;">Prijavi se</a>
         </li>
       </ul>
       
@@ -187,13 +187,13 @@
         <br>
         <hr>
         <form action="" method="POST" style="margin-top:30px;margin-bottom:30px;">
-        <div>Unesite ime: <input type="text" name="ime" id=""></div><br>
-        <div>Unesite prezime: <input type="text" name="prezime" id=""></div><br>
-        <div>Unesite email: <input type="email" name="email" id=""></div><br>
-        <div>Unesite lozinku: <input type="password" name="pass1" id=""></div><br>
-        <div>Potvrdite lozinku: <input type="password" name="pass2" id=""></div><br>
+        <div class="podaci">Unesite ime: <input type="text" name="ime" id="" class="podaciInput"></div><br>
+        <div class="podaci">Unesite prezime: <input type="text" name="prezime" id="" class="podaciInput"></div><br>
+        <div class="podaci">Unesite email: <input type="email" name="email" id="" class="podaciInput"></div><br>
+        <div class="podaci">Unesite lozinku: <input type="password" name="pass1" id="" class="podaciInput"></div><br>
+        <div class="podaci">Potvrdite lozinku: <input type="password" name="pass2" id="" class="podaciInput"></div><br>
 
-        <input type="submit" value="Registruj se" name="posalji">
+        <input type="submit" value="Registruj se" name="posalji" class="dugme">
             <br>
          <label>
         <?php if(isset($greska)) echo $greska; ?>

@@ -55,9 +55,8 @@
 </script>
 
 
-<script src="../fontawesome/js/all.min.js"></script>
-  <script src="../js/bootstrap.bundle.min.js"></script>
-<div class="collapse" id="collapseExample" id="forma">
+
+
   <div class="card card-body">
     <h4>Unesite email: <input type="email" name="email" id="email"></h4>
     <div id="emailError"></div>
@@ -67,7 +66,11 @@
     <div id="pass1Error"></div>
     <h4>Potvrdite novu lozinku: <input type="password" name="pass2" id="pass2"></h4>
     <div id="pass2Error"></div>
-    <input type="button" value="Promenite lozinku"  id="izmeni" onClick="Izmeni()">
+    <button type="button" class="btn btn-outline-primary" id="izmeni" onClick="Izmeni()">Promeni lozinku</button>
     
 </div>
-        </div>
+       
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../ajax/ajax.js"></script>
+    <script src="../ajax/ajax2.js"></script>   

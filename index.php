@@ -6,7 +6,7 @@
     
     <title>Gradski prevoz</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+  
   <link rel="stylesheet" href="css/style.css">
   
 </head>
@@ -53,8 +53,8 @@
 <section id="hero-section">
     <div class="container hero-container" >
       <br><br>
-        <div id="naslov" style="text-align:center; "><h1>Rezervacija autobuskih karata gradskog prevoza</h1></div>
-    
+        <div id="naslov"><h1>Rezervacija autobuskih karata gradskog prevoza</h1></div>
+    <hr class="hrLinija">
 <br><br>
     <div>
         <img src="slike/slika1.jpg" alt="" style="width:100%; height:500px;">

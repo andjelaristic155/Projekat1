@@ -15,7 +15,7 @@
     <title>Gradski prevoz</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link rel="../stylesheet" href="../fontawesome/css/all.min.css">
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="..\css\style.css" rel="stylesheet">
   
 </head>
 <body>
@@ -89,14 +89,15 @@
 <section id="hero-section">
     <div class="container" style="text-align:center;">
         <br>
-        <div id="naslov"><h1>Pocetna Korisnik</h1></div>
+        <div id="naslov"><h1>Početna Administrator</h1></div>
+        <hr class="hrLinija">
         <div id="prikaziPoruku"></div>
         <br>
         <form >
         <div style="text-align:left; margin-left:35%;">
-            <h3>Ime i prezime: <label for="" class="podaci"><?php if(isset($prikaz)) echo $prikaz; ?></label></h3>
-            <h3>Uloga: <label for="" class="podaci"><?php if(isset($uloga)) echo $uloga; ?></label></h3>
-            <h3>Email: <label for="" class="podaci"><?php if(isset($email)) echo $email; ?></label></h3>
+            <h3>Ime i prezime: <label for="" class="podaci1" ><?php if(isset($prikaz)) echo $prikaz; ?></label></h3>
+            <h3>Uloga: <label for=""  class="podaci1"><?php if(isset($uloga)) echo $uloga; ?></label></h3>
+            <h3>Email: <label for="" class="podaci1"><?php if(isset($email)) echo $email; ?></label></h3>
         </div>
         <br>
         
@@ -116,8 +117,8 @@
     <div id="pass1Error"></div>
     <h4>Potvrdite novu lozinku: <input type="password" name="pass2" id="pass2"></h4>
     <div id="pass2Error"></div>
-    <input type="button" value="Promenite lozinku"  id="izmeni" onClick="Izmeni()">
-    
+   
+    <button type="button" class="btn btn-outline-primary" id="izmeni" onClick="Izmeni()">Promeni lozinku</button>
 
 
     
@@ -145,7 +146,8 @@
             <h4>Unesite email adresu: <input type="email" name="email1" id="email1"></h4>
             <div id="email1Error" class="text-danger"></div>
 
-            <input type="button" value="Promenite podatke" onClick="izmeniPodatke()">
+            
+             <button type="button" class="btn btn-outline-primary" onClick="izmeniPodatke()">Promenite podatke</button>
         </div>
     </div>
 </div>
